@@ -1,0 +1,26 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Color of non-active pagination bullets */
+}
+
+.swiper-pagination-bullet-active {
+  background: rgb(159, 13, 13); /* Color of the active pagination bullet */
+}
+
+.swiper-pagination {
+  align-self: center;
+  height: 20px;
+margin-bottom: 15px;
+  background-color: aquamarine;
+  z-index: 20;
+}

@@ -1,4 +1,4 @@
-import { ArrowLeftsvg, Filtersvg } from "../../assets/svg";
+import { ArrowLeftsvg, Crosssvg, Filtersvg, Heartsvg, Starsvg } from "../../assets/svg";
 import styles from "./Dashboard.module.css";
 import { useRef } from "react";
 
@@ -21,17 +21,20 @@ export const Dashboard = (_props: Props) => {
 
   const notInterested = () => {
     // Your logic
-    console.log("notinterested")
+    console.log("notinterested");
   };
 
   const interested = () => {
     // Your logic
-       console.log("interested");
+    console.log("interested");
   };
 
   const handleSwipe = (swiper: any) => {
-    // Your swipe handling logic
-    console.log();
+    if (swiper.swipeDirection == "next") {
+      notInterested();
+    } else {
+      interested();
+    }
   };
 
   const slideLeft = () => {
@@ -57,7 +60,7 @@ export const Dashboard = (_props: Props) => {
   };
   return (
     <div className={styles.Wrapper}>
-      <div>
+      <div className={styles.TopNav}>
         <button>
           <ArrowLeftsvg />
         </button>
@@ -90,10 +93,10 @@ export const Dashboard = (_props: Props) => {
           <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
       </div>
-      <div>
-        <button onClick={slideLeft}>False</button>
-        <button onClick={slideRight}>True</button>
-        <button onClick={handleSuper}>Super</button>
+      <div className={styles.buttonWrapper}>
+        <button onClick={slideLeft}><Crosssvg /></button>
+        <button onClick={slideRight} style={{backgroundColor:"red"}}><Heartsvg /></button>
+        <button onClick={handleSuper}><Starsvg /></button>
       </div>
       <div>
         <Navbar />

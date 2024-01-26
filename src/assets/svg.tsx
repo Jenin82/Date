@@ -40,3 +40,72 @@ export const Filtersvg = (_props: Props) => {
     </svg>
   );
 }
+
+
+
+export const Crosssvg = (_props: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M7.86612 7.86612C8.35427 7.37796 9.14573 7.37796 9.63388 7.86612L15 13.2322L20.3661 7.86612C20.8543 7.37796 21.6457 7.37796 22.1339 7.86612C22.622 8.35427 22.622 9.14573 22.1339 9.63388L16.7678 15L22.1339 20.3661C22.622 20.8543 22.622 21.6457 22.1339 22.1339C21.6457 22.622 20.8543 22.622 20.3661 22.1339L15 16.7678L9.63388 22.1339C9.14573 22.622 8.35427 22.622 7.86612 22.1339C7.37796 21.6457 7.37796 20.8543 7.86612 20.3661L13.2322 15L7.86612 9.63388C7.37796 9.14573 7.37796 8.35427 7.86612 7.86612Z"
+        fill="#F27121"
+        stroke="#F27121"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+
+export const Heartsvg = (_props: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="51"
+      height="51"
+      viewBox="0 0 51 51"
+      fill="none"
+    >
+      <path
+        d="M15.9375 8.5C9.48267 8.5 4.25 13.7327 4.25 20.1875C4.25 31.875 18.0625 42.5 25.5 44.9716C32.9375 42.5 46.75 31.875 46.75 20.1875C46.75 13.7327 41.5173 8.5 35.0625 8.5C31.1097 8.5 27.6151 10.4623 25.5 13.4659C23.3849 10.4623 19.8903 8.5 15.9375 8.5Z"
+        fill="white"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+
+
+export const Starsvg = (_props: Props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+    >
+      <path
+        d="M14.9991 3.125L11.1785 10.9235L2.5 12.1819L8.78681 18.3282L7.284 26.875L14.9991 22.762L22.7159 26.875L21.2241 18.3282L27.5 12.1819L18.8696 10.9235L14.9991 3.125Z"
+        fill="#8A2387"
+        stroke="#8A2387"
+        stroke-width="2"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}

@@ -74,7 +74,7 @@ export const Signup = (_props: Props) => {
           </p>
         </div>
       </Swiper>
-      <div>
+      <div className={styles.submitButton}>
         <button>Create an account</button>
         <p>
           Already have an account?&nbsp;<a href="/login">Sign In</a>

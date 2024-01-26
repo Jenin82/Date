@@ -1,0 +1,82 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 30px 10vw 0px;
+  gap: 20px;
+}
+
+.Wrapper .Header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Wrapper .Header > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.Wrapper .Header > div h1 {
+  font-size: 35px;
+}
+.Wrapper .Header > div button {
+  background: none;
+  cursor: pointer;
+}
+
+.Wrapper .bodyWrapper {
+  height: calc(100% - 100px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.Wrapper .bodyWrapper .bodySections {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* overflow-x: hidden; */
+  gap: 10px;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap > div {
+  width: calc(100% / 2 - 10px);
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap > div > div {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap > div > div button {
+  background-color: rgba(219, 219, 219, 0.5);
+  padding: 5px;
+  width: 50%;
+}
+
+.Wrapper .bodyWrapper .bodySections > .ContentWrap > div > div button svg {
+  height: 30px;
+}

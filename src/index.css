@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
-
+/* figma link :  https://www.figma.com/file/pObekhsqK8sJ2xZ7xjQZku/Dating-APP-Template?type=design&node-id=354-764&mode=design&t=gW8XCm4DM8Ig7NAt-0*/
 :root {
 font-family: 'Raleway', sans-serif;
   line-height: 1.5;
@@ -22,14 +22,14 @@ font-family: 'Raleway', sans-serif;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   max-width: 500px;
-  margin: auto;
+
   
 }
 

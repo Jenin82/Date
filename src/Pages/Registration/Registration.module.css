@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 0px 10vw;
 }
 .Wrapper .swiperSection {
   width: 100%;
@@ -15,6 +16,17 @@
   max-height: 300px;
 }
 
-.cutomPagination{
-    background-color: aquamarine;
+.cutomPagination {
+  background-color: aquamarine;
+}
+
+.submitButton {
+  color: black;
+}
+
+.submitButton button {
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 20px;
 }

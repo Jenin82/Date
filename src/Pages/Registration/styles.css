@@ -4,6 +4,19 @@
   align-items: center;
 }
 
+.signup .inputBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  input {
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
 .swiper-pagination-bullet {
   background: rgba(
     255,
@@ -20,7 +33,7 @@
 .swiper-pagination {
   align-self: center;
   height: 20px;
-margin-bottom: 15px;
+  margin-bottom: 15px;
   background-color: aquamarine;
   z-index: 20;
 }

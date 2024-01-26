@@ -75,13 +75,13 @@ export const Login = (_props: Props) => {
             Users going through a vetting process to ensure you never match with
             bots.
           </p>
-          <div>
+          <div className="inputBoxWrapper">
             <input type="email" placeholder="email" />
             <input type="text" placeholder="password" />
           </div>
         </div>
       </Swiper>
-      <div>
+      <div className={styles.submitButton}>
         <button onClick={handleNavigation}>Sign In</button>
         <p>
           Not have an account?&nbsp;<a href="/signup">Sign Up</a>

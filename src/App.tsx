@@ -8,6 +8,9 @@ import { NotFound } from "./Pages/NotFound/NotFound";
 import { Signup } from "./Pages/Registration/Signup";
 import { Login } from "./Pages/Registration/Login";
 import { Dashboard } from "./Pages/Dashboard/Dashboard";
+import { Matches } from "./Pages/Matches/Matches";
+import { Message } from "./Pages/Message/Message";
+import { Profile } from "./Pages/Profile/Profile";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,6 +37,18 @@ function App() {
     {
       path: "/dashboard",
       element: <Dashboard />,
+    },
+    {
+      path: "/match",
+      element: <Matches />,
+    },
+    {
+      path: "/message",
+      element: <Message />,
+    },
+    {
+      path: "/profile",
+      element: <Profile />,
     },
   ]);
   return <RouterProvider router={router} />;

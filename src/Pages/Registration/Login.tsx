@@ -1,5 +1,5 @@
 import styles from "./Registration.module.css";
-
+import { useNavigate } from "react-router-dom";
 // import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -11,6 +11,10 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 type Props = {};
 
 export const Login = (_props: Props) => {
+  const navigate = useNavigate();
+  const handleNavigation = () => {
+    navigate("/dashboard");
+  };
   return (
     <div className={styles.Wrapper}>
       <Swiper
@@ -72,13 +76,13 @@ export const Login = (_props: Props) => {
             bots.
           </p>
           <div>
-            <input type="email" placeholder="email"/>
-            <input type="text" placeholder="password"/>
+            <input type="email" placeholder="email" />
+            <input type="text" placeholder="password" />
           </div>
         </div>
       </Swiper>
       <div>
-        <button>Sign In</button>
+        <button onClick={handleNavigation}>Sign In</button>
         <p>
           Not have an account?&nbsp;<a href="/signup">Sign Up</a>
         </p>

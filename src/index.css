@@ -12,7 +12,7 @@ font-family: 'Raleway', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-color: white;
+    background-color: rgb(158, 124, 124);
 }
 
 * {
@@ -30,6 +30,7 @@ body {
   width: 100%;
   max-width: 500px;
   margin: auto;
+  
 }
 
 h1 {

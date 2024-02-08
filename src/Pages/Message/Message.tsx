@@ -75,7 +75,7 @@ export const Message: React.FC<Props> = (_props) => {
       name: "John Doe",
       message: "Hello! How are you?",
       LastMsgtime: "10:45 AM",
-      unread: 0,
+      unread: 30,
     },
     {
       image: "https://source.unsplash.com/random",
@@ -154,7 +154,7 @@ const getTimeDifference = (lastMsgTime: string): string => {
                 </div>
                 <div className={styles.TimeAndUnread}>
                   <p>{getTimeDifference(LastMsgtime)}</p>
-                  {unread > 0 && <p>{unread}</p>}
+                  {unread > 0 && <p className={styles.unread}>{unread}</p>}
                 </div>
               </div>
             ))}

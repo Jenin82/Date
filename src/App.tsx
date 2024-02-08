@@ -11,6 +11,7 @@ import { Dashboard } from "./Pages/Dashboard/Dashboard";
 import { Matches } from "./Pages/Matches/Matches";
 import { Message } from "./Pages/Message/Message";
 import { Profile } from "./Pages/Profile/Profile";
+import { GuestPage } from "./Pages/GuestPage/GuestPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,10 @@ function App() {
     {
       path: "/profile",
       element: <Profile />,
+    },
+    {
+      path: "/guestpage",
+      element: <GuestPage />,
     },
   ]);
   return <RouterProvider router={router} />;

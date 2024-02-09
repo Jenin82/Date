@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { supabase } from "../../../utils/supabase";
 import toast from "react-hot-toast";
 import styles from "./index.module.css"
@@ -10,7 +10,7 @@ const Registeration = () => {
         password: "",
         passwordConfirm: "",
     });
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSignUp = async () => {
         let { data: res, error } = await supabase.auth.signUp({
@@ -20,7 +20,6 @@ const Registeration = () => {
         if (error) {
             throw error.message;
         } else {
-            localStorage.setItem("user", JSON.stringify(res.session));
             return res;
         }
     };
@@ -44,7 +43,7 @@ const Registeration = () => {
         toast.promise(handleSignUp(), {
             loading: "Signing up...",
             success: () => {
-                // navigate("/profile");
+                navigate("/verify");
                 return <b>Signed up successfully</b>;
             },
             error: (error) => {

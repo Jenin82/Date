@@ -1,0 +1,24 @@
+.wrapper {
+	padding: 1rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.form input {
+	width: 16rem;
+	background-color: white;
+	color: black;
+	padding: .5rem 1rem;
+	border: 1px solid salmon;
+	border-radius: 10px;
+}
+
+.form button {
+	border-radius: 10px;
+	padding: .5rem 1rem;
+	background-color: palevioletred;
+}

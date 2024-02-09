@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
+import LoginInput from "./components/LoginInput";
 type Props = {};
 
 export const Login = (_props: Props) => {
@@ -71,18 +72,10 @@ export const Login = (_props: Props) => {
                 </SwiperSlide>{" "}
                 <div className="signup">
                     <h1>Sign In</h1>
-                    <p>
-                        Users going through a vetting process to ensure you
-                        never match with bots.
-                    </p>
-                    <div className="inputBoxWrapper">
-                        <input type="email" placeholder="email" />
-                        <input type="text" placeholder="password" />
-                    </div>
+                    <LoginInput />
                 </div>
             </Swiper>
             <div className={styles.submitButton}>
-                <button onClick={handleNavigation}>Sign In</button>
                 <p>
                     Not have an account?&nbsp;<a href="/signup">Sign Up</a>
                 </p>

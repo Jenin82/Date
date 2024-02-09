@@ -1,5 +1,5 @@
 import styles from "./Matches.module.css";
-import heart from '../../assets/heart.png'
+import heart from "../../assets/heart.png";
 type Props = {};
 
 export const MatchFound = (_props: Props) => {
@@ -8,18 +8,14 @@ export const MatchFound = (_props: Props) => {
       <div></div>
       <div className={styles.ImageSet}>
         <div className={styles.ImageWrap}>
-          <img
-            className={styles.imageone}
-            src="https://source.unsplash.com/random"
-            alt=""
-          />
-          <img className={styles.heart1} src={heart} alt="" />
-          <img
-            className={styles.imagetwo}
-            src="https://source.unsplash.com/random"
-            alt=""
-          />
-          <img className={styles.heart2} src={heart} alt="" />
+          <div className={styles.imageone}>
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img className={styles.heart1} src={heart} alt="" />
+          </div>
+          <div className={styles.imagetwo}>
+            <img src="https://source.unsplash.com/random" alt="" />
+            <img className={styles.heart2} src={heart} alt="" />
+          </div>
         </div>
         <div>
           <h2>It’s a match, Jake!</h2>

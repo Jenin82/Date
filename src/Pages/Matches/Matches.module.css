@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: calc(100vh - 50px);
   width: 100%;
   padding: 30px 0vw 0px;
   gap: 20px;
@@ -111,7 +111,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+}
+.WrapperMF .ImageSet  img{
+  width: 100%;
 }
 .WrapperMF .ImageSet .imageone {
   margin-bottom: -10vh;
@@ -123,21 +125,21 @@
   margin-top: -8vh;
   transform: rotate(15deg);
 }
-.WrapperMF .ImageSet .ImageWrap .heart1 {
-  position: absolute;
-  height: 60px;
-  object-fit: contain;
-  top: 10px;
-  right: 10vw;
-  z-index: 8000;
-transform: rotate(20deg);
-}
 .WrapperMF .ImageSet .ImageWrap .heart2 {
   position: absolute;
-  height: 60px;
+  height: 70px;
   object-fit: contain;
-  bottom: 0;
-  left: -10vw;
+  top: -8%;
+  right: 50%;
+  z-index: 8000;
+  transform: rotate(20deg);
+}
+.WrapperMF .ImageSet .ImageWrap .heart1 {
+  position: absolute;
+  height: 70px;
+  object-fit: contain;
+  bottom: -8%;
+  left: -50%;
   z-index: 8000;
 }
 .WrapperMF .ImageSet h2 {

@@ -33,7 +33,7 @@
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-    padding: 0px 10vw;
+  padding: 0px 10vw;
 }
 
 .Wrapper .bodyWrapper .bodySections {
@@ -81,4 +81,84 @@
 
 .Wrapper .bodyWrapper .bodySections > .ContentWrap > div > div button svg {
   height: 30px;
+}
+
+/* Match Found page */
+
+.WrapperMF {
+  height: 100vh;
+  padding: 20px 10vw;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.WrapperMF img {
+  max-width: 200px;
+  max-height: 300px;
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.WrapperMF .ImageSet {
+  max-height: 80vh;
+}
+.WrapperMF .ImageSet .ImageWrap {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.WrapperMF .ImageSet .imageone {
+  margin-bottom: -10vh;
+  transform: rotate(-12deg);
+  z-index: 666;
+}
+.WrapperMF .ImageSet .imagetwo {
+  margin-left: -5vw;
+  margin-top: -8vh;
+  transform: rotate(15deg);
+}
+.WrapperMF .ImageSet .ImageWrap .heart1 {
+  position: absolute;
+  height: 60px;
+  object-fit: contain;
+  top: 10px;
+  right: 10vw;
+  z-index: 8000;
+transform: rotate(20deg);
+}
+.WrapperMF .ImageSet .ImageWrap .heart2 {
+  position: absolute;
+  height: 60px;
+  object-fit: contain;
+  bottom: 0;
+  left: -10vw;
+  z-index: 8000;
+}
+.WrapperMF .ImageSet h2 {
+  font-size: 34px;
+  color: #e94057;
+  text-align: center;
+}
+.WrapperMF .ImageSet p {
+  font-size: 15px;
+}
+.WrapperMF .ButtonWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.WrapperMF button {
+  background-color: #e94057;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
 }

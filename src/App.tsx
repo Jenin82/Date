@@ -12,6 +12,7 @@ import { Matches } from "./Pages/Matches/Matches";
 import { Message } from "./Pages/Message/Message";
 import { Profile } from "./Pages/Profile/Profile";
 import { GuestPage } from "./Pages/GuestPage/GuestPage";
+import { MatchFound } from "./Pages/Matches/MatchFound";
 
 function App() {
   const router = createBrowserRouter([
@@ -54,6 +55,10 @@ function App() {
     {
       path: "/guestpage",
       element: <GuestPage />,
+    },
+    {
+      path: "/matchfound",
+      element: <MatchFound />,
     },
   ]);
   return <RouterProvider router={router} />;

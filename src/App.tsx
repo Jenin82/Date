@@ -10,7 +10,7 @@ import { Login } from "./Pages/Registration/Login";
 import { Dashboard } from "./Pages/Dashboard/Dashboard";
 import { Matches } from "./Pages/Matches/Matches";
 import { Message } from "./Pages/Message/Message";
-import { Profile } from "./Pages/Profile/Profile";
+import { Profile } from "./Pages/GuestPage/Profile";
 import { GuestPage } from "./Pages/GuestPage/GuestPage";
 import { MatchFound } from "./Pages/Matches/MatchFound";
 import Verify from "./Pages/Registration/pages/Verify";

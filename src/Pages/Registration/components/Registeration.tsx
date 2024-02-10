@@ -52,35 +52,34 @@ const Registeration = () => {
         });
     };
     return (
-        <div className={styles.wrapper}>
-            <form onSubmit={(e) => handleSubmit(e)} className={styles.form}>
-                <input
-                    type="email"
-                    placeholder="email address"
-                    onChange={(e) =>
-                        setData({ ...data, email: e.target.value })
-                    }
-                />
-                <input
-                    type="password"
-                    placeholder="password"
-                    onChange={(e) =>
-                        setData({ ...data, password: e.target.value })
-                    }
-                />
-                <input
-                    type="password"
-                    placeholder="confirm password"
-                    onChange={(e) =>
-                        setData({
-                            ...data,
-                            passwordConfirm: e.target.value,
-                        })
-                    }
-                />
-                <button type="submit">Sign In</button>
-            </form>
-        </div>
+      <div className={styles.wrapper}>
+        <form onSubmit={(e) => handleSubmit(e)} className={styles.form}>
+          <input
+            type="email"
+            placeholder="email address"
+            onChange={(e) => setData({ ...data, email: e.target.value })}
+          />
+          <input
+            type="password"
+            placeholder="password"
+            onChange={(e) => setData({ ...data, password: e.target.value })}
+          />
+          <input
+            type="password"
+            placeholder="confirm password"
+            onChange={(e) =>
+              setData({
+                ...data,
+                passwordConfirm: e.target.value,
+              })
+            }
+          />
+          <button type="submit">Create Account</button>
+        </form>
+        <p>
+          Already have an account?&nbsp;<a href="/login"><b>Sign In</b></a>
+        </p>
+      </div>
     );
 };
 

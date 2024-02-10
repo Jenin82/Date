@@ -1,7 +1,6 @@
 import "./App.css";
 import {
     createBrowserRouter,
-    Navigate,
     RouterProvider,
 } from "react-router-dom";
 import { NotFound } from "./Pages/NotFound/NotFound";
@@ -15,6 +14,8 @@ import { GuestPage } from "./Pages/GuestPage/GuestPage";
 import { MatchFound } from "./Pages/Matches/MatchFound";
 import Verify from "./Pages/Registration/pages/Verify";
 import Details from "./Pages/Registration/pages/Details";
+import { Toaster } from "react-hot-toast";
+import { PrivateRoute } from "./services/PrivateRoute";
 
 function App() {
     const router = createBrowserRouter([
@@ -35,10 +36,6 @@ function App() {
             element: <Details />,
         },
         {
-            path: "/",
-            element: <Navigate to="/signup" replace />,
-        },
-        {
             path: "/signup",
             element: <Signup />,
         },
@@ -47,9 +44,34 @@ function App() {
             element: <Login />,
         },
         {
-            path: "/dashboard",
-            element: <Dashboard />,
+            path: "/",
+            element: <PrivateRoute />,
+            children: [
+                {
+                    path: "/",
+					element: <Dashboard />,
+                },
+                {
+					path: "/profile",
+					element: <Profile />,
+                },
+                // {
+                //     path: "/",
+                //     element: <RoleChecker allowedRoles={[Roles.ADMIN]} />,
+                //     children: [
+                //         {
+                //             path: "/payment-status",
+                //             element: <Admin />,
+                //         },
+                //         {
+                //             path: "/payment-status/:id",
+                //             element: <PaymentStatus />,
+                //         },
+                //     ],
+                // },
+            ],
         },
+
         {
             path: "/match",
             element: <Matches />,
@@ -57,10 +79,6 @@ function App() {
         {
             path: "/message",
             element: <Message />,
-        },
-        {
-            path: "/profile",
-            element: <Profile />,
         },
         {
             path: "/guestpage",
@@ -71,7 +89,12 @@ function App() {
             element: <MatchFound />,
         },
     ]);
-    return <RouterProvider router={router} />;
+    return (
+        <>
+            <Toaster position="bottom-center" reverseOrder={false} />
+            <RouterProvider router={router} />;
+        </>
+    );
 }
 
 export default App;

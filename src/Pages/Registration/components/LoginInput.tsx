@@ -38,7 +38,7 @@ const LoginInput = () => {
         toast.promise(handleSignIn(), {
             loading: "Signing in...",
             success: () => {
-                navigate("/profile");
+                navigate("/details");
                 return <b>Signed in successfully</b>;
             },
             error: (error) => {

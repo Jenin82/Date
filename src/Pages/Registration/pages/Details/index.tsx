@@ -63,7 +63,7 @@ const Details = () => {
                 throw error.message;
             } else if (users) {
                 if (users?.length > 0) {
-                    navigate("/dashboard");
+                    navigate("/");
                 } else {
                     setVerified(false);
                 }
